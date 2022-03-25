@@ -1,0 +1,704 @@
+/*================================
+	ファーストビュー
+=================================*/
+.main-image{
+  background: url(../images/top/mvsp.jpg) no-repeat center center/cover;
+  height: 440px;
+  margin-bottom: 64px;
+
+  @include mq('lg'){
+    background: url(../images/top/mv-pc.jpg) no-repeat center center/cover;
+    height: 560px;
+  }
+}
+
+.main-image .inner{
+  position: relative;
+  height: 100%;
+}
+
+.main-catch{
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  color: $color-main;
+  text-align: center;
+  letter-spacing: .3em;
+  margin-top: 24px;
+
+  @include mq('lg'){
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 72px;
+    text-align: left;
+  }
+}
+
+.main-copy{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.4;
+
+  @include mq('lg'){
+    font-size: 32px;
+    line-height: 1.5;
+    letter-spacing: .3em;
+ 
+  }
+}
+
+.main-lead{
+  font-size: 16px;
+  position: relative;
+
+  @include mq('lg'){
+    font-size: 18px;
+    margin-top: 12px;
+    padding-left: 72px;
+
+    &:before{
+      content: '';
+      width: 56px;
+      height: 1px;
+      background: $color-main;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+    
+  }
+}
+
+/*================================
+	お知らせ
+=================================*/
+.top-info{
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @include mq('lg'){
+    display: flex;
+  }
+}
+
+.top-info__heading{
+  background: #d8f0f8;
+  display: flex;
+  align-items: center;
+  padding: 28px 20px 20px;
+  color: $color-main;
+
+  @include mq('lg'){
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+  }
+}
+
+.top-info__img{
+  height: 24px;
+  padding-right: 12px;
+
+  @include mq('lg'){
+    height: 36px;
+    padding-right: 0;
+  }
+}
+
+.top-info__title{
+  font-size: 24px;
+  padding-right: 16px;
+
+  @include mq('lg'){
+    padding-right: 0;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+}
+
+.top-info__sub{
+  font-family: $font-english;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.top-info__contents{
+  background: #e2f4fa;
+  padding: 24px 48px 84px 20px;
+  position: relative;
+
+  @include mq('lg'){
+    width: 80%;
+    padding: 40px;
+    font-size: 16px;
+  }
+}
+
+.top-info__item{
+  padding-bottom: 20px;
+
+  @include mq('lg'){
+    display: flex;
+  }
+}
+
+.top-info__date{
+  @include mq('lg'){
+    margin-right: 40px;
+  }
+}
+
+.top-info__more{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*================================
+	受付時間について
+=================================*/
+.top-reception{
+  padding-top: 96px;
+
+  @include mq('lg'){
+    padding-top: 64px;
+  }
+}
+
+.top-reception__heading{
+  display: flex;
+  align-items: center;
+  color: $color-main;
+}
+
+.top-reception__img{
+  height: 24px;
+  padding-right: 12px;
+
+  @include mq('lg'){
+    height: 36px;
+  }
+}
+
+.top-reception__title{
+  font-size: 24px;
+  padding-right: 16px;
+
+  @include mq('lg'){
+    font-size: 18px;
+  }
+}
+
+.top-reception__sub{
+  font-size: 14px;
+  font-family: $font-english;
+  padding-top: 16px;
+
+  @include mq('lg'){
+    font-size: 14px;
+    padding-top: 8px;
+  }
+}
+
+.top-reception__schedule{
+  margin-top: 20px;
+
+  @include mq('lg'){
+    width: 70%;
+
+    img{
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+
+}
+
+.top-reception__links{
+  margin-top: 20px;
+}
+
+.top-reception__link{
+  padding-top: 40px;
+  padding-bottom: 32px;
+  margin-bottom: 16px;
+
+  @include mq('lg'){
+    padding: 24px;
+  }
+}
+
+.-first{
+  background: #d7eee9;
+  color: $color-main;
+}
+
+.-online{
+  background: #eeebe1;
+  color: #938b75;
+}
+
+.top-reception__link__heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.-icon_mobile{
+  width: 36px;
+  height: 36px;
+  margin-top: -24px;
+
+  @include mq('lg'){
+    width: 48px;
+    height: 44px;
+  }
+}
+
+.-icon_pc{
+  width: 46px;
+  height: 40px;
+  margin-right: 20px;
+
+  @include mq('lg'){
+    width: 32px;
+    height: 27px;
+  }
+}
+
+.top-reception__link__title{
+  font-size: 20px;
+  margin-right: 14px;
+
+  @include mq('lg'){
+    font-size: 18px;
+  }
+}
+
+.top-reception__link__text{
+  text-align: center;
+  margin-top: 28px;
+  font-size: 14px;
+
+  @include mq('lg'){
+    font-size: 14px;
+    color: #333;
+    margin-top: 14px;
+  }
+  
+}
+
+.top-reception__contents{
+  @include mq('lg'){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.top-reception__link__button{
+  img{
+    width: 100px;
+    @include mq('lg'){
+      max-height: 30px;
+    }
+  }
+}
+
+.top-reception__table{
+  th{
+    background: $color-main;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  td{
+    border: 1px solid $color-main;
+    color: $color-main;
+  }
+}
+
+@include mq('md'){
+  .top-reception__table{
+    th{
+      height: 78px;
+      min-width: 80px;
+    }
+
+    td{
+      height: 78px;
+      min-width: 80px;
+    }
+  }
+}
+
+.-black{
+  color: #534c41 !important;
+}
+
+.-border-right{
+  border-right: 1px solid $color-main !important;
+}
+
+.-border-bottom{
+  border-bottom: 1px solid $color-main !important;
+}
+
+/*================================
+	医師の曜日担当
+=================================*/
+.top-responsible{
+  padding-top: 64px;
+  padding-bottom: 84px;
+}
+
+.top-responsible__contents{
+  margin-top: 24px;
+}
+
+.top-responsible__date{
+  text-align: right;
+}
+
+.top-responsible__note{
+  text-align: right;
+  font-size: 16px;
+  margin-top: 12px;
+
+  span{
+    color: $color-main;
+  }
+}
+
+.top-responsible__texts{
+  margin-top: 20px;
+}
+
+.top-responsible__img{
+  display: none;
+}
+
+/*================================
+	写真付きメニュー
+=================================*/
+.top-menu{
+  padding: 72px 0 104px;
+  background: url(../images/top/top-menu-background.jpg) no-repeat center center/cover;
+  font-feature-settings: "palt";
+
+  @include mq('lg'){
+    background: url(../images/top/background-pc.jpg) no-repeat center center/cover;
+  }
+}
+
+.cards{
+  @include mq('lg'){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.card{
+  margin-bottom: 60px;
+  position: relative;
+  display: block;
+
+  &:before{
+    content: '';
+    background: url(../images/top/shadow.png) no-repeat center center/cover;
+    width: 380px;
+    height: 64px;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mq('lg'){
+      width: 260px;
+      bottom: -10px;
+    }
+  }
+
+  @include mq('lg'){
+    width: 360px;
+  }
+}
+
+.card__contents{
+  background: #fff;
+  margin: -64px 16px 0;
+  position: relative;
+  border-radius: 8px;
+  padding: 40px 12px 32px;
+
+  @include mq('md'){
+    margin-top: -40px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 28px 30px 34px;
+    min-height: 340px;
+  }
+}
+
+.card__icon{
+  margin: 0 auto;
+}
+
+.card__title{
+  color: $color-main;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 32px;
+
+  @include mq('lg'){
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  span{
+    font-size: 14px;
+    display: block;
+
+    @include mq('lg'){
+      font-size: 14px;
+    }
+  }
+}
+
+.card__text{
+  margin-top: 18px;
+}
+
+/*================================
+	菅野愛生会の取り組み
+=================================*/
+.top-efforts{
+  padding: 64px 0 40px;
+
+  @include mq('md'){
+    padding-bottom: 60px;
+  }
+}
+
+.top-efforts__wrapper{
+  @include mq('lg'){
+    display: flex;
+    align-items: center;
+  }
+}
+
+.top-efforts__heading{
+  display: flex;
+  align-items: center;
+  color: $color-main;
+
+  @include mq('lg'){
+    flex-direction: column;
+    width: 200px;
+  }
+}
+
+.top-efforts__heading__img{
+  height: 24px;
+  padding-right: 12px;
+
+  @include mq('lg'){
+    height: 36px;
+    padding-right: 0;
+  }
+}
+
+.top-efforts__title{
+  font-size: 20px;
+  padding-right: 16px;
+
+  @include mq('lg'){
+    font-size: 14px;
+    padding-top: 18px;
+    padding-right: 0;
+  }
+}
+
+.top-efforts__sub{
+  font-size: 20px;
+  font-family: $font-english;
+  padding-top: 10px;
+
+  @include mq('lg'){
+    font-size: 14px;
+    padding-top: 8px;
+  }
+}
+
+.top-efforts__arrows{
+  display: none;
+
+  @include mq('lg'){
+    display: flex;
+    justify-content: space-between;
+    width: 94px;
+    margin-top: 36px;
+  }
+
+  img{
+    display: block;
+  }
+}
+
+.top-efforts__contents{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 32px;
+
+  @include mq('lg'){
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-left: 64px;
+  }
+}
+
+.top-efforts__item{
+  display: block;
+  background: #e6f5fb;
+  padding: 17px 8px 36px;
+  width: 48%;
+  border-radius: 8px;
+  margin-bottom: 36px;
+
+  @include mq('lg'){
+    width: 260px;
+    min-width: 260px;
+    margin-right: 40px;
+  }
+}
+
+.top-efforts__img{
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.top-efforts__link{
+  color: #2798c9;
+  font-size: 18px;
+  margin-top: 28px;
+  text-align: center;
+
+  @include mq('lg'){
+    font-size: 16px;
+  }
+}
+
+/*================================
+	菅野愛生会の病院・施設紹介
+=================================*/
+.top-hospitals{
+  padding-bottom: 64px;
+
+  @include mq('md'){
+    padding-top: 60px;
+    border-top: 1px solid $color-main;
+  }
+}
+
+.top-hospitals__heading{
+  display: flex;
+  align-items: flex-start;
+  color: $color-main;
+
+  @include mq('lg'){
+    align-items: center;
+  }
+}
+
+.top-hospitals__img{
+  height: 36px;
+  padding-right: 20px;
+  padding-top: 10px;
+
+  @include mq('lg'){
+    height: 36px;
+    padding-top: 0;
+  }
+}
+
+.top-hospitals__title{
+  font-size: 20px;
+  padding-right: 20px;
+  line-height: 1.4;
+
+  @include mq('lg'){
+    font-size: 18px;
+  }
+
+  span{
+    font-size: 14px;
+    font-family: $font-english;
+    display: block;
+    margin-left: 4px;
+
+    @include mq('lg'){
+      padding-top: 8px;
+      display: inline-block;
+      padding-left: 20px;
+    }
+  }
+}
+
+.top-hospitals__contents{
+  margin-top: 32px;
+
+  @include mq('lg'){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.top-hospitals__item{
+  display: flex;
+  margin-bottom: 24px;
+  border-radius: 8px;
+
+  @include mq('lg'){
+    width: 32%;
+  }
+}
+
+.top-hospitals__pic{
+  width: 50%;
+
+  img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.top-hospitals__text{
+  background: #eef9f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 42px 0;
+  
+
+  @include mq('lg'){
+    padding: 30px 0;
+  }
+}
+
+.top-hospitals__name{
+  font-size: 18px;
+  color: $color-main;
+  line-height: 1.75;
+  text-align: center;
+
+  @include mq('lg'){
+    font-size: 16px;
+  }
+}

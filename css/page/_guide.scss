@@ -1,0 +1,40 @@
+.guide__img{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 24px;
+
+  @include mq('lg'){
+    justify-content: flex-start;
+  }
+
+  img{
+    display: block;
+    width: 48%;
+    margin-bottom: 12px;
+
+    @include mq('lg'){
+      width: 32%;
+      margin-right: 8px;
+    }
+  }
+}
+
+.access-table{
+  th{
+    padding-right: 16px;
+  }
+}
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* = height ÷ width × 100 */
+}
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

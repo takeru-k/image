@@ -1,0 +1,40 @@
+/*================================
+	パンクズ
+=================================*/
+.breadcrumb{
+  margin-top: 44px;
+}
+
+.breadcrumb__items{
+  font-feature-settings: "palt";
+  display: flex;
+  flex-wrap: wrap;
+  background: #f0f9f7;
+  padding: 16px 16px 8px 16px;
+
+  li{
+    position: relative;
+    padding-left: 16px;
+    margin-right: 12px;
+    margin-bottom: 8px;
+
+    @include mq('sm'){
+      margin-right: 40px;
+    }
+
+    &:before{
+      content: '';
+      width: 5px;
+      height: 7px;
+      background: url(../images/common/triangle.png) no-repeat center center/cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+    }
+
+    @include mq('lg'){
+      min-width: 200px;
+    }
+  }
+}
